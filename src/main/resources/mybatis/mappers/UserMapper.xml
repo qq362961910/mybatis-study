@@ -9,7 +9,4 @@
     <result column="age" property="age"/>
     <result column="sex" property="sex"/>
 </resultMap>
-<select id="selectById" resultMap="BaseResultMap" parameterType="long" statementType="PREPARED">
-  select * from user where id = #{id}
-</select>
 </mapper>
