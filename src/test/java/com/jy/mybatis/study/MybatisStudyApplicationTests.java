@@ -1,5 +1,6 @@
 package com.jy.mybatis.study;
 
+import com.jy.mybatis.study.dao.param.UserParam;
 import com.jy.mybatis.study.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,6 +22,18 @@ public class MybatisStudyApplicationTests {
     @Test
     public void queryUserByIdTest() {
         logger.info("================================>>> user: {}", userService.queryUserById(1));
+    }
+
+    @Test
+    public void queryUserByParamTest() {
+        UserParam userParam = new UserParam();
+        logger.info("================================>>> user: {}", userService.queryUserByParam(userParam));
+    }
+
+    @Test
+    public void stringLengthTest() {
+        String src = "\\\\\n";
+        System.out.println(src.length());
     }
 
 }
