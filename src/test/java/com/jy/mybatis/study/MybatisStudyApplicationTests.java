@@ -21,13 +21,18 @@ public class MybatisStudyApplicationTests {
 
     @Test
     public void queryUserByIdTest() {
-        logger.info("================================>>> user: {}", userService.queryUserById(1));
+        logger.info("================================>>> queryUserById: {}", userService.queryUserById(1));
+    }
+
+    @Test
+    public void selectByIdTest() {
+        logger.info("================================>>> selectById: {}", userService.selectById(1));
     }
 
     @Test
     public void queryUserByParamTest() {
         UserParam userParam = new UserParam();
-        logger.info("================================>>> user: {}", userService.queryUserByParam(userParam));
+        logger.info("================================>>> queryUserByParam: {}", userService.queryUserByParam(userParam));
     }
 
     @Test
