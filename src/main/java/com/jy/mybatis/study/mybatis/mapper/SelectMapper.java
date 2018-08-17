@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.SelectProvider;
 
-public interface SelectByIdMapper<T> {
+public interface SelectMapper<T> {
 
     @ResultMap("com.jy.mybatis.study.dao.UserDao.BaseResultMap")
     @SelectProvider(type = BaseSelectProvider.class, method = "selectById")

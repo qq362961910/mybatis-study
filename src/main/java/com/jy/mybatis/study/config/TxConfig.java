@@ -42,9 +42,9 @@ public class TxConfig {
         return new TransactionInterceptor(platformTransactionManager, source);
     }
 
-    /*
-    * TransactionInterceptor 组合 BeanNameAutoProxyCreator可快速实现声明式事务
-    */
+    /**
+     * TransactionInterceptor 组合 BeanNameAutoProxyCreator可快速实现声明式事务
+     * */
 //    @Bean
 //    public BeanNameAutoProxyCreator txProxy() {
 //        BeanNameAutoProxyCreator creator = new BeanNameAutoProxyCreator();
